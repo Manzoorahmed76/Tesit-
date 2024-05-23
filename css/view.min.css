@@ -1,0 +1,801 @@
+:root {
+    --m-c: #168b3a;
+    --s-c: #11752f;
+    --box-shadow: 0px 1px 3px -1px rgba(0, 0, 0, 0.5);
+    --box-shadow-left: -5px 0px 17px 0 rgb(0 0 0 / 28%);
+    --font-base: "Segoe UI", "Segoe UI Symbol", "Segoe UI Emoji", "Segoe UI Historic", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Arial, Tahoma, Verdana, Geneva, -apple-system, BlinkMacSystemFont, sans-serif, system-ui;
+}
+
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24
+        }
+
+        *,
+        ::after,
+        ::before,
+        input[type=text] {
+            box-sizing: border-box
+        }
+
+        html {
+            font-size: 100%;
+            scroll-behavior: smooth
+        }
+
+        body {
+            font-size: 1rem;
+            line-height: 1.6;
+            font-family: Arial, sans-serif;
+            background: #ecedf3;
+            margin: 0;
+            padding: 0;
+            -webkit-font-smoothing: antialiased;
+            touch-action: manipulation;
+        }
+
+        #index .textfaces{
+            display: none;
+        }
+
+        /* universal sec */
+        .container {
+    width: 1200px;
+    margin: 0 auto;
+}
+.ads {
+    display: block;
+    width: 100%;
+    height: auto;
+    /* grid-column: 1 / -1;*/
+}
+.index .textfaces{
+    display: none;
+}
+/* Font sizes for headings */
+h1 {
+    font-size: 2.5em; /* 2.5 times the body font size, typically for main titles */
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2em; /* Slightly smaller, often for section titles */
+    color: #666;
+    
+        grid-column: 1 / -1;
+        margin: 0;
+}
+
+h3 {
+    font-size: 1.75em; /* For sub-sections */
+}
+
+        /* header sec */
+        header,nav {
+    background: #6d46cb;
+}
+a{
+    text-decoration: none;
+}
+header .tab {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    padding: 7px;
+    background: #6340b8;
+    height: 45px;
+}
+header .tab a {
+    flex: 0 0 auto;
+    margin-right: 10px;
+    border: none;
+    color: #ffffff82;
+    background: 0 0;
+    font-size: 16px;
+    padding: 4px 10px;
+    transition: .3s;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+header .tab a:hover,header .tab a.active-link{
+    background: #fff;
+    color: #444;
+}
+
+header .tab a span,.links a span{
+    position: absolute;
+    display: block;
+    padding: 0px 5px;
+    border-radius: 4px;
+    background: red;
+    color: #fff;
+    font-size: 10px;
+    top: -5px;
+    right: -10px;
+}
+.logo {
+    display: flex;
+    justify-content: center;
+}
+#openMenu {
+    position: absolute;
+    background: 0 0;
+    right: 5px;
+    top: 5px;
+    border: none;
+    cursor: pointer;
+}
+#openMenu .material-symbols-outlined {
+    font-size: 30px;    color: #ffffff87;
+}
+
+.flyout-menu {
+    position: fixed;
+    right: -100%;
+    top: 0;
+    width: 350px;
+    height: 100%;
+    background-color: #fff;
+    color: #fff;
+    align-items: center;
+    transition: right .3s;
+    z-index: 9999;
+}
+.close-button, .flyout-menu {
+    box-shadow: var(--box-shadow-left);
+}
+.open {
+    right: 0;
+}
+#sidelinks {
+    overflow: scroll;
+    height: 100%;
+}
+.close-button {
+    position: absolute;
+    top: 10px;
+    left: -40px;
+    padding: 8px 16px;
+    font-size: 30px;
+    border: none;
+    color: #444;
+    cursor: pointer;
+    border-radius: 10px 0 0 10px;
+}
+.close-button:hover{
+    background-color: #6d46cb;
+    color: #fff;
+}
+.links {
+    display: block;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-radius:15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .1);
+    overflow: scroll;
+}
+.links h3{
+    color: #000;
+    font-size: 18px;
+    margin: 10px;
+}
+.othersites #links a{
+    display: inline-block;
+    width: 32%;
+}
+/* main sec */
+
+/* random sec */
+
+/* settings of input sec */
+#containerDiv {
+  display: flex; /* Already defined in inline style, reiterated here for consistency */
+  justify-content: center; /* Centers the elements within the container */
+  align-items: center; /* Vertically aligns all items in the container */
+  padding: 5px; /* Adds padding around the container for spacing */
+ 
+}
+
+label {
+    margin: 5px 0 0 10px;
+    color: #333;
+}
+
+input[type="number"] {
+  width: 60px; /* Fixed width for number inputs */
+  height: 40px;
+  padding: 8px; /* Padding for ease of entry */
+  border: 1px solid #ccc; /* Subtle border */
+  border-radius: 5px; /* Rounded corners for the input fields */
+  text-align: center; /* Centers text inside the input field */
+  margin: 0 5px; /* Margin to separate inputs from other elements */
+}
+
+#containerDiv .icon-cw {
+    padding: 8px 15px;
+    height: 40px;
+    background-color: #6d46cb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#containerDiv .icon-cw:hover {
+  background-color: rgb(2, 81, 165); /* Darker shade on hover for feedback */
+}
+
+/* Enhance focus visibility for accessibility */
+input[type="number"]:focus, #containerDiv .icon-cw:focus {
+  outline: none; /* Removes default outline */
+  box-shadow: 0 0 0 2px #0056b3; /* Blue shadow to indicate focus */
+}
+
+/* input sec */
+.input-sec{
+    position: sticky;
+    z-index: 1000;
+    margin: 1% 4%;
+    top: 0;
+}
+.input-sec .input-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.input-sec .input-container span.material-symbols-outlined {
+    background: #6d46cb;
+    padding: 0 18px;
+    height: 55px;
+    border-radius: 25px 0 0 25px;
+    font-size: 24px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 0 0 0 rgba(0, 0, 0, .1);
+}
+.input-sec .input-container input[type=text] {
+    flex-grow: 1;
+    padding: 15px;
+    border: 2px solid #6d46cb;
+    border-radius: 0 25px 25px 0;
+    font-size: 17px;
+    background: #fff;
+    color: #444;
+    height: 55px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, .1);
+    transition: border-color .3s, box-shadow .3s;
+    outline: 0;
+}
+#clearButton {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #eaeaea;
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: #999;
+    font-size: 18px;
+    cursor: pointer;
+    display: none;
+}
+
+
+/* share buttons */
+.share-buttons {
+    display: flex;
+}
+
+#st-1 {
+    z-index: 1 !important;
+}
+.text {
+    font-size: 12px;
+    padding: 2px;
+    margin-right: 5px;
+    margin-left: 20px;
+}
+.settings-share {
+    display: flex;
+    margin-top: 12px;
+    justify-content: right;
+    align-items: center;
+}
+.settings {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.settings-share button {
+    padding: 8px 16px;
+    background-color: #e4e5e6;
+    border: none;
+    border-radius: 15px;
+    transition: background-color .3s, transform .2s;
+    color: #777;
+}
+input.slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 8px;
+    background: #fff;
+    outline: 0;
+    opacity: .7;
+    transition: opacity .2s;
+    border-radius: 5px;
+}
+input.slider::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;width:20px;height:20px;background:#6d46cb;cursor:pointer;border-radius:50%}
+input.slider::-moz-range-thumb{width:20px;height:20px;background:#6d46cb;cursor:pointer;border-radius:50%}
+
+
+
+
+
+
+
+/* list views sec */
+.listView {
+    padding: 20px;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    grid-auto-flow: dense;
+    position: relative;
+}
+.listView li {
+    position: relative;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 2px 10px 0;
+   border: 1px solid transparent;
+    line-height: 1.2;
+    grid-column: span 1;
+    list-style: none;
+    overflow: hidden;
+    transition: background-color .2s, transform .2s;
+    color: #444;
+
+}
+.listView li:hover{
+    border-color: #6d46cb;
+    color: #6d46cb;
+}
+.listView .new {
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    background: red;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 4px 7px;
+    font-size: 11px;
+    text-transform: uppercase;
+}
+.listView .btn {
+    float: right;
+    position: relative;
+    padding: 2px 0 10px;
+}
+.listView p {
+    padding: 12px 0 0 10px;
+    margin: 0;
+    cursor: pointer;
+    line-height: 1.4;
+    font-size: 18px;
+    font-weight: 500;
+}
+li#glitchfont{
+    grid-column: 1 / -1;
+    text-align: center;
+    overflow: visible;
+}
+div#text_panel_creepify {
+    grid-column: 1 / -1;
+}
+.glitchsettings{
+    display: flex;
+    justify-content: space-between;
+}
+span.alertmsg {
+    position: fixed;
+    left: 0;
+    top: 30%;
+    background: #fff;
+    color: #000;
+    border: 1px solid #000;
+    padding: 5px 10px;
+    border-radius: 0 5px 5px 0;
+    z-index: 9999;
+    
+}
+
+#fancy-list p span {
+    display: inline-block;
+    padding: 5px 8px;
+    margin: 3px;
+    cursor: pointer;
+    color: #444;
+    border-radius: 10px;
+}
+#fancy-list p span:hover{
+    background: #fff;
+color: #6d46cb;
+border-color: #6d46cb;
+}
+
+.list-name {
+  display: block; /* Ensures it takes its own line */
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px; /* Space between title and buttons */
+}
+
+.btn {
+  gap: 10px; /* Space between buttons */
+  justify-content:right;
+}
+
+.listView button  {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    color: #999;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.listView button:hover {
+  background-color: #f5f5f5; /* Darker blue on hover */
+  color: #6d46cb;
+}
+.listView .shareitbutton {
+    display: none;
+}
+
+
+.material-symbols-outlined {
+  font-variant: normal;
+  text-transform: none;
+  display: inline-block;
+  font-size: 24px; /* Icon size */
+  user-select: none;
+}
+
+.list-description {
+  font-size: 1.2rem;
+  color: #000; /* Dark gray text for readability */
+}
+
+.btn button {
+  background-color: transparent; /* Light grey background for buttons */
+  color: #8d66e7; /* Dark text color for contrast */
+  
+  margin-left: 5px;
+}
+
+.btn button:hover {
+  color: #6d46cb; /* Darker background on hover */
+}
+
+button.icon-cw.regen {
+    width: 90%;
+    background: #6d46cb;
+    color: #fff;
+    padding: 15px;
+    border: 1px solid #6d46cb;
+    font-size: 20px;
+    margin: 2% 4.5%;
+    text-align: center;
+    border-radius: 20px;
+    transition: background-color .2s, transform .2s;
+    box-shadow: 3px 3px 0 rgb(131 58 180);
+    cursor: pointer;
+}
+button.icon-cw.regen:hover {
+    background:rgb(131 58 180);
+}
+/* text faces */
+.textfaces{
+    padding: 15px;
+
+}
+
+
+/* links sec */
+#links {
+    display: block;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#links a,.links a{
+    display: inline-block;
+    text-decoration: none;
+    color: #666;
+    background-color: #fff;
+    padding: 7px 15px;
+    margin: 4px;
+    font-size: 1.1em;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+    transition: all .3s ease;
+    position: relative;
+    font-weight: 700;
+}
+#links a:hover,.links a:hover {
+    background: #6d46cb;
+    color: #fff;
+}
+
+#links p{
+    text-transform: uppercase;
+    text-align: center;
+    padding: 5px;
+    color: #6d46cb;
+    border-bottom: 1px solid #6d46cb;
+   
+}
+
+/* bottom menu */
+.bottom-menu {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #6d46cb;
+    z-index: 10;
+    box-shadow: 0 -3px 10px rgba(0, 0, 0, .3);
+}
+.bottom-menu ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.bottom-menu li {
+    padding: 5px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.bottom-menu li:hover {
+    background-color: #fff;
+    border-radius: 12px;
+}
+.bottom-menu a {
+    color: #ffffff8a;
+    text-decoration: none;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: color .3s ease-in-out;
+}
+.bottom-menu .material-symbols-outlined{
+    color: #fff;
+}
+.bottom-menu li:hover a,.bottom-menu li:hover .material-symbols-outlined{
+    color: #444;
+}
+
+/* popup box */
+#popupBox {
+    display: block;
+    visibility: hidden;
+    z-index: 99999 !important;
+    left: 0;
+    background: #00000082;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+.boxedview {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .1);
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 10%;
+    max-width: 700px;
+    position: relative;
+    text-align: center;
+}
+#clock {
+    font-size: 14px;
+    color: #333;
+}
+
+.boxedview button {
+    height: 40px;
+    width: 40px;
+    margin: 5px;
+    border: none;
+    border-radius: 50%;
+    background: #f1f1f1;
+    cursor: pointer;
+    color: #444;
+}
+.boxedview button:hover{
+    scale: 1.2;
+    color: #000;
+    background: #f9f9f9;
+}
+.close-top {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+}
+/* Style for the seconds span */
+#seconds {
+    font-weight: bold; /* Makes the number stand out */
+    color: #ff4500; /* Orange color to draw attention */
+    margin-left: 5px;
+    margin-right: 2px;
+}
+
+.the_copied_text {
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    margin: 5px;
+    resize: none;
+    text-align: center;
+    height: 80px;
+    font-weight: 600;
+}
+.the_copied_text_description {
+    font-size: 14px;
+    color: #666;
+    display: block;
+    margin-bottom: 5px;
+}
+.popupads {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    min-height: 300px;
+    max-height: 330px;
+}
+
+/* scroll button */
+#scrollToTopButton {
+    display: none;
+    position: fixed;
+    bottom: 185px;
+    right: 10px;
+    z-index: 9999;
+        outline: 0;
+    background-color: #fff;
+    color: #6d46cb;
+    border: 1px solid #6d46cb;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+/* loader */
+.overlay {
+    position: fixed; /* Make the overlay cover the entire screen */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    z-index: 9999; /* Ensure it's on top of other elements */
+    display: none; /* Use flexbox for centering the loader */
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    opacity: 1; /* Start fully visible */
+    transition: opacity 0.3s ease; /* Smooth transition for hiding/showing */
+}
+
+/* Loader element inside the overlay */
+.overlay .loader {
+    width: 50px; /* Set loader size */
+    height: 50px; /* Set loader size */
+    border: 8px solid #f3f3f3; /* Light grey border */
+    border-top: 8px solid #6d46cb; /* Blue border for the spinning part */
+    border-radius: 50%; /* Make it a circle */
+    animation: spin 1.5s linear infinite; /* Infinite spinning animation */
+}
+
+/* Animation keyframes for spinning effect */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+/* footer sec */
+
+@media (max-width: 1080px) {
+    .container,.left-container,.right-container{
+        width: 100%;
+      }
+      section.seotext{
+        padding: 0 3%;
+      }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+    .input-sec .input-container span.material-symbols-outlined {
+        padding: 0 5px 0px 15px;
+    }
+    .flyout-menu{
+        width: 80%;
+    }
+    input[type="number"]{
+        width: 40px;
+    height: 35px;
+    }
+    #containerDiv .icon-cw{
+        height: 35px;    padding: 5px 15px;
+    }
+    label {
+        margin: 0px 0 0 10px;
+        color: #777;
+    }
+    h1.entry-title{
+            font-size: 1.5em;
+            padding: 0 2%;
+    }
+    #main-container {
+    display: block;
+}
+
+#fancy-list h2{
+    font-size: 1.2em;
+    padding: 0;
+    margin: 2% 0 0 0;
+}
+
+.settings {
+    padding: 0 10%;
+}
+.share-buttons {
+    display: flex;
+    justify-content: center;
+}
+.listView {
+    grid-template-columns: repeat(1, 1fr);
+    padding:0 3%;
+}
+  .container,.left-container,.right-container,.seotext .thumb {
+    width: 100%;
+  }
+  .settings-share{
+    display: block;}
+  .listView li,.listView .shareitbutton{
+    display: inline-block;
+  }
+  .othersites #links a{
+    width: 98%;
+  }
+
+  
+} 
